@@ -1,0 +1,16 @@
+{
+  "FayElf": [
+    {
+      "ProviderType" /*驱动类型*/: "SQLite",
+      "ConnectionString" /*数据库连接字符串*/: "Data Source={Root}/FayElf.db;",
+      "IsTransaction" /*是否启用事务处理*/: true,
+      "CommandTimeOut" /*执行超时时间*/: 300,
+      "CacheTimeOut" /*缓存时长 单位为秒 0为永久缓存*/: 60,
+      "CacheType" /*缓存类型 Default 默认, No 不缓存, Memory 内存, Disk 磁盘, Redis, Memcache, MongoDB*/: "No",
+      "IsolationLevel" /*事务级别 DbNull 空级别, Serializable 串行读, RepeatableRead 可重复读, ReadCommitted 提交读, ReadUncommitted 未提交读, Snapshot 隔离未提交读, Chaos 混乱读, Unspecified 未指定*/: "Unspecified",
+      "IsPool" /*是否启用连接池*/: false,
+      "MaxPool" /*连接池最大数量*/: 100,
+      "IgnoreCase": true
+    }
+  ]
+}

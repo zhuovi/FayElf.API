@@ -1,0 +1,14 @@
+{
+  "OpenLog"/*开启日志*/: true,
+  "StorageDays"/*日志存储天数*/: 30,
+  "Path"/*日志存储路径*/: "Log",
+  "FileLength"/*单文件最大内容长度 0不限制 单位字节*/: 10000000,
+  "MaxThreads"/*最大线程数*/: 3,
+  "LogLevel"/*日志级别*/: "Trace",
+  "ConsoleFlags"/*输出控制台标识*/: "Trace, Debug, Task, Info, Warn, Error",
+  "StorageType"/*存储类型*/: "File, Console",
+  "ConnectionStringKey"/*数据库连接字符串KEY*/: null,
+  "InsertSql"/*插入SQL数据标识 日志类型 { LogType } 日志消息 { Message } 日志错误ID { ErrorID } 错误堆栈 { StackTrace } 堆栈跟踪 { Tracking } 错误源 { DataSource } 类名 { ClassName } 方法名 { FunctionName } 访问地址 { RequestUrl } 日志时间 { AddTime }*/: "INSERT INTO ZW_Tb_Log(LogType,Message,StackTrace,Tracking,DataSource,AddTime) values('{LogType}','{Message}','{StackTrace}','{Tracking}','{DataSource}','{AddTime}');",
+  "Fields"/*记录信息字段*/: "LogType,ErrorID,FunctionName,ClassName,Message,DataSource,StackTrace,Tracking,RequestUrl,AddTime",
+  "MessageType"/*消息类型展示*/: "Name"
+}

@@ -1,0 +1,11 @@
+{
+  "Debug"/*是否启用调试*/: true,
+  "MaxWorkerThreads"/*最大线程数量*/: 100,
+  "IdleSeconds"/*消费日志空闲时长*/: 60,
+  "TaskWaitTimeout"/*任务队列执行任务超时时间*/: 300,
+  "DataEncrypt"/*是否启用数据加密*/: false,
+  "DataKey"/*加密数据key*/: "7092734",
+  "ServerLogging"/*是否开启请求日志*/: false,
+  "IsIntercept"/*是否拦截*/: false,
+  "SQLInjection"/*SQL注入串*/: "insert\\s+into |update |delete |select | union | join |exec |execute | exists|'|truncate |create |drop |alter |column |table |dbo\\.|sys\\.|alert\\(|<scr|ipt>|<script|confirm\\(|console\\.|\\.js|<\\/\\s*script>|now\\(\\)|getdate\\(\\)|time\\(\\)| Directory\\.| File\\.|FileStream |\\.Write\\(|\\.Connect\\(|<\\?php|show tables |echo | outfile |Request[\\.\\(]|Response[\\.\\(]|eval\\s*\\(|\\$_GET|\\$_POST|cast\\(|Server\\.CreateObject|VBScript\\.Encode|replace\\(|location|\\-\\-"
+}
